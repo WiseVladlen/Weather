@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    tools:ignore="InvalidNavigation">
+
+    <fragment
+        android:id="@+id/editLocationsFragment"
+        android:name="com.example.weather.presentation.edit_locations.EditLocationsFragment"
+        tools:layout="@layout/fragment_edit_locations">
+        <action
+            android:id="@+id/action_editLocationsFragment_to_searchLocationsFragment"
+            app:destination="@id/searchLocationsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchLocationsFragment"
+        android:name="com.example.weather.presentation.search_locations.SearchLocationsFragment"
+        tools:layout="@layout/fragment_search_locations">
+        <action
+            android:id="@+id/action_searchLocationsFragment_to_mainFragment"
+            app:destination="@+id/mainFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.weather.presentation.main_fragment.MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_searchLocationsFragment"
+            app:destination="@id/searchLocationsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_editLocationsFragment"
+            app:destination="@id/editLocationsFragment" />
+    </fragment>
+
+</navigation>

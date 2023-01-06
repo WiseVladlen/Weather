@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Weather.InfoScreen">
+
+    <TextView
+        android:id="@+id/text_view_forecast_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Среда, 20 июля 2022 года" />
+
+    <com.example.weather.utils.views.custom_views.PieChartView
+        android:id="@+id/humidity_pie_chart_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_underline" />
+
+    <TextView
+        android:id="@+id/text_view_humidity_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/humidity_pie_chart_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/humidity_pie_chart_view"
+        tools:text="50%" />
+
+    <TextView
+        android:id="@+id/text_view_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/humidity_title"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/humidity_underline"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_temp" />
+
+    <View
+        android:id="@+id/humidity_underline"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_details_title" />
+
+    <TextView
+        android:id="@+id/text_view_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_forecast_date"
+        tools:text="18.00°C" />
+
+    <TextView
+        android:id="@+id/text_view_min_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/text_view_temp"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_temp"
+        tools:text="16.00°C" />
+
+    <TextView
+        android:id="@+id/text_view_max_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_temp"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_temp"
+        tools:text="20.00°C" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

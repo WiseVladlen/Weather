@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Uninitialized",
+        "country": "Uninitialized",
+        "coord": {
+            "lon": 180.0,
+            "lat": 180.0
+        },
+        "viewType": 2
+    }
+]

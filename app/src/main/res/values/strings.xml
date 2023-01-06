@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <string name="title_add_location">Добавить местоположение</string>
+    <string name="title_edit_locations">Изменить местоположения</string>
+    <string name="title_my_locations">Мои местоположения</string>
+    <string name="title_location_not_selected">Местоположение не выбрано</string>
+    <string name="title_share_weather_forecast">Поделиться прогнозом</string>
+    <string name="title_current_location">Текущее местоположение</string>
+    <string name="title_allow_access">Разрешить доступ</string>
+
+    <string name="query_hint">Город или населенный пункт</string>
+
+    <string name="tag_container">Container</string>
+
+    <string name="subtitle_deleting_location">Удалить местоположение?</string>
+    <string name="subtitle_specify_at_least_one_location">Укажите хотя бы одно местоположение</string>
+
+    <string name="message_forecast_updated">Прогноз обновлен</string>
+    <string name="message_locations_not_found">Местоположения не найдены</string>
+    <string name="message_locations_search">Поиск местоположений…</string>
+    <string name="message_no_connection">Нет подключения</string>
+    <string name="message_data_is_up_to_date">Данные актуальны</string>
+    <string name="message_error_has_occurred">Произошла ошибка. Повторите попытку</string>
+
+    <string name="message_location_data_is_missing">
+        Приложению Weather требуются сведения о местоположении вашего устройства для представления местного прогноза погоды
+    </string>
+
+    <string name="message_weather_forecast">
+        Прогноз на %1$s года:\n>
+        Температура днём: %2$s°C\n>
+        Температура в течение дня: от %3$s°C до %4$s°C\n>
+        Влажность: %5$d%%
+    </string>
+
+    <string name="action_cancel">Отмена</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_ok">Ок</string>
+
+    <string name="humidity_title">Влажность</string>
+
+    <string name="temp_field">%1$s°C</string>
+    <string name="humidity_field">%1$d%%</string>
+    <string name="forecast_date_field">Прогноз на %1$s года</string>
+</resources>

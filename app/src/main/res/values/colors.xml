@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#2196F3</color>
+    <color name="light_blue_alpha_40">#662196F3</color>
+    <color name="pale_cyan">#92D7F4</color>
+    <color name="light_grey">#A5A5A5</color>
+    <color name="gold">#FFD700</color>
+    <color name="light_gray_blue">#202E3B</color>
+    <color name="dark_gray_blue">#1B2831</color>
+    <color name="anchor">#46505A</color>
+
+    <color name="ic_launcher_background">#3C5A78</color>
+</resources>

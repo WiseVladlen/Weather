@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.Weather.DialogNoteLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Theme.Weather.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message_location_data_is_missing" />
+
+    <TextView
+        android:id="@+id/button_allow_access"
+        style="@style/Theme.Weather.DialogNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:text="@string/title_allow_access" />
+
+</LinearLayout>
